@@ -1,3 +1,15 @@
 <resources>
     <string name="app_name">Comehere</string>
+    <string name="welcome">Bienvenido</string>
+    <string name="in_out">Ingrese Aqui</string>
+
+    <!--Options Menu-->
+    <string name="home">Inicio</string>
+    <string name="book">Galería de Aves</string>
+    <string name="mybook">Avistamientos</string>
+    <string name="maps">Mapas</string>
+    <string name="options">Opciones</string>
+    <string name="help">Ayuda</string>
+    <string name="about">Acerca de</string>
+    <string name="settings">Configuración</string>
 </resources>

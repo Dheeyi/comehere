@@ -1,6 +1,48 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">#3F51B5</color>
-    <color name="colorPrimaryDark">#303F9F</color>
-    <color name="colorAccent">#FF4081</color>
+    <color name="colorPrimary">#01649a</color>
+    <color name="colorPrimaryDark">#004e78</color>
+    <color name="colorAccent">#fdb61e</color>
+
+    <!--grey-->
+    <color name="md_grey_50">#fafafa</color>
+    <color name="md_grey_100">#f5f5f5</color>
+    <color name="md_grey_200">#eeeeee</color>
+    <color name="md_grey_300">#e0e0e0</color>
+    <color name="md_grey_400">#bdbdbd</color>
+    <color name="md_grey_500">#9e9e9e</color>
+    <color name="md_grey_600">#757575</color>
+    <color name="md_grey_700">#616161</color>
+    <color name="md_grey_800">#424242</color>
+    <color name="md_grey_900">#212121</color>
+    <color name="md_grey_500_25">#409e9e9e</color>
+    <color name="md_grey_500_50">#809e9e9e</color>
+    <color name="md_grey_500_75">#c09e9e9e</color>
+    <!--Texts-->
+    <array name="texts_white">
+        <item>@color/md_text_white</item>
+        <item>@color/md_text_white_87</item>
+        <item>@color/md_secondary_text_icons_white</item>
+        <item>@color/md_disabled_hint_text_white</item>
+        <item>@color/md_divider_white</item>
+    </array>
+    <color name="md_text_white">#ffffffff</color>
+    <color name="md_text_white_87">#dfffffff</color>
+    <color name="md_secondary_text_icons_white">#b3ffffff</color>
+    <color name="md_disabled_hint_text_white">#4dffffff</color>
+    <color name="md_divider_white">#1fffffff</color>
+
+    <array name="texts_black">
+        <item>@color/md_text</item>
+        <item>@color/md_secondary_text_icons</item>
+        <item>@color/md_disabled_hint_text</item>
+        <item>@color/md_divider</item>
+    </array>
+    <color name="md_text">#df000000</color>
+    <color name="md_secondary_text_icons">#8a000000</color>
+    <color name="md_disabled_hint_text">#4c000000</color>
+    <color name="md_divider">#1f000000</color>
+    <color name="md_statusbar_translucent">#4000</color>
+
+    <color name="md_transparent">#19000000</color>
 </resources>
