@@ -5,11 +5,14 @@
 
     <!--Options Menu-->
     <string name="home">Inicio</string>
-    <string name="book">Galería de Aves</string>
-    <string name="mybook">Avistamientos</string>
+    <string name="lastquery">Ultima Consulta</string>
+    <string name="history">Historial</string>
     <string name="maps">Mapas</string>
     <string name="options">Opciones</string>
     <string name="help">Ayuda</string>
     <string name="about">Acerca de</string>
     <string name="settings">Configuración</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>

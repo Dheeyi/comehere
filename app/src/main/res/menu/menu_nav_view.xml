@@ -10,11 +10,11 @@
         <item
             android:id="@+id/item_navigation_drawer_book"
             android:icon="@drawable/ic_action_book"
-            android:title="@string/book" />
+            android:title="@string/lastquery" />
         <item
-            android:id="@+id/item_navigation_drawer_mybook"
-            android:icon="@drawable/ic_action_collections"
-            android:title="@string/mybook" />
+            android:id="@+id/item_navigation_drawer_book2"
+            android:icon="@drawable/ic_action_book"
+            android:title="@string/history" />
         <item
             android:id="@+id/item_navigation_drawer_mymaps"
             android:icon="@drawable/ic_action_map"
@@ -24,6 +24,10 @@
     <item android:title="@string/options">
         <menu>
             <item
+                android:id="@+id/item_navigation_drawer_settings"
+                android:icon="@drawable/ic_action_settings"
+                android:title="@string/settings" />
+            <item
                 android:id="@+id/item_navigation_drawer_help"
                 android:icon="@drawable/ic_action_help"
                 android:title="@string/help" />
@@ -31,10 +35,6 @@
                 android:id="@+id/item_navigation_drawer_about"
                 android:icon="@drawable/ic_action_info_outline"
                 android:title="@string/about" />
-            <!--<item
-                android:id="@+id/item_navigation_drawer_settings"
-                android:icon="@drawable/ic_action_settings"
-                android:title="@string/settings" />-->
         </menu>
     </item>
 

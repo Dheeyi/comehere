@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="4dp"
+    android:orientation="vertical"
+    card:cardCornerRadius="2dp"
+    card:cardElevation="3dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:orientation="horizontal"
+        android:padding="16dp">
+
+        <ImageView
+            android:id="@+id/imgBank"
+            android:layout_width="100dp"
+            android:layout_height="80dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="8dp"
+            android:background="@color/colorAccent" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/nameBank"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Banco Central de Bolivia"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/md_text" />
+
+            <TextView
+                android:id="@+id/addressCentralBank"
+                android:layout_width="match_parent"
+                android:paddingTop="4dp"
+                android:layout_height="wrap_content"
+                android:textColor="@color/md_secondary_text_icons"
+                android:text="Of. Central - Av. Camacho Nro. 2465"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</android.support.v7.widget.CardView>

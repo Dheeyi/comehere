@@ -1,7 +1,9 @@
-package aes.example.comehere;
+package aes.example.comehere.UI;
 
 import android.os.Bundle;
 import android.support.design.widget.NavigationView;
+import android.support.v4.app.Fragment;
+import android.support.v4.app.FragmentManager;
 import android.support.v4.view.GravityCompat;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBar;
@@ -9,6 +11,9 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
+
+import aes.example.comehere.R;
+import aes.example.comehere.UI.Fragments.MainBankFragment;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -40,14 +45,18 @@ public class MainActivity extends AppCompatActivity {
                                 menuItem.setChecked(true);
                                 break;
                             case R.id.item_navigation_drawer_book:
-                                setTitle(R.string.book);
+                                setTitle(R.string.lastquery);
                                 menuItem.setChecked(true);
                                 break;
-                            case R.id.item_navigation_drawer_mybook:
+                            case R.id.item_navigation_drawer_book2:
+                                setTitle(R.string.history);
+                                menuItem.setChecked(true);
                                 break;
                             case R.id.item_navigation_drawer_mymaps:
                                 setTitle(R.string.maps);
                                 menuItem.setChecked(true);
+                                break;
+                            case R.id.item_navigation_drawer_settings:
                                 break;
                             case R.id.item_navigation_drawer_help:
                                 break;
@@ -70,6 +79,7 @@ public class MainActivity extends AppCompatActivity {
         actionBar = getSupportActionBar();
         actionBar.setHomeAsUpIndicator(R.drawable.ic_menu);
         actionBar.setDisplayHomeAsUpEnabled(true);
+        changeFragment(new MainBankFragment(), "main");
     }
 
     /**
@@ -92,10 +102,21 @@ public class MainActivity extends AppCompatActivity {
         getSupportActionBar().setTitle(title);
     }
 
+    /**
+     * Changes fragments
+     * @param fragment
+     * @param tag
+     */
+    public void changeFragment(Fragment fragment, String tag) {
+        FragmentManager fragmentManager = getSupportFragmentManager();
+        fragmentManager.beginTransaction()
+                .replace(R.id.contentMain, fragment, tag)
+                .commit();
+    }
+
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.menu_nav_view, menu);
         return true;
     }
 

@@ -16,7 +16,7 @@
 
         <!-- Content Main -->
         <FrameLayout
-            android:id="@+id/contentLayout"
+            android:id="@+id/contentMain"
             android:layout_width="match_parent"
             android:layout_height="match_parent" />
 
